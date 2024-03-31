@@ -116,4 +116,5 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/home/nazuko/.local/share/fnm:$PATH"
 eval "`fnm env`"
 alias gcq="git commit -m"
+bindkey -s ^f "tmux-sessionizer\n"
 
