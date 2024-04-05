@@ -79,6 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # plugins=(git)
+# source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
@@ -115,6 +116,7 @@ source $ZSH/oh-my-zsh.sh
 # fnm
 export PATH="/home/nazuko/.local/share/fnm:$PATH"
 eval "`fnm env`"
-alias gcq="git commit -m"
-bindkey -s ^f "tmux-sessionizer\n"
 
+alias gcq="git commit -m"
+alias g++="g++-12"
+bindkey -s ^f "tmux-sessionizer\n"
