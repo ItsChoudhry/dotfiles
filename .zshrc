@@ -119,4 +119,5 @@ eval "`fnm env`"
 
 alias gcq="git commit -m"
 alias g++="g++-12"
+alias vault="nvim ~/projects/vault/"
 bindkey -s ^f "tmux-sessionizer\n"
