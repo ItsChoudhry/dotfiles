@@ -121,3 +121,10 @@ alias gcq="git commit -m"
 alias g++="g++-12"
 alias vault="nvim ~/projects/vault/"
 bindkey -s ^f "tmux-sessionizer\n"
+
+# fnm
+FNM_PATH="/home/nazuko/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/nazuko/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi

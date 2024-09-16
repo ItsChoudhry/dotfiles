@@ -119,3 +119,10 @@ fi
 
 alias gcq="git commit -m"
 alias g++="g++-12"
+
+eval $(fnm env | sed 1d)
+export PATH=$(cygpath $FNM_MULTISHELL_PATH):$PATH
+
+if [[ -f .node-version || -f .nvmrc ]]; then
+    fnm use
+fi
