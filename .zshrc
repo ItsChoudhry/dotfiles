@@ -114,17 +114,11 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # fnm
-export PATH="/home/nazuko/.local/share/fnm:$PATH"
+export PATH="/home/choudhry/.local/share/fnm:$PATH"
 eval "`fnm env`"
 
 alias gcq="git commit -m"
 alias g++="g++-12"
-alias vault="nvim ~/projects/vault/"
 bindkey -s ^f "tmux-sessionizer\n"
 
-# fnm
-FNM_PATH="/home/nazuko/.local/share/fnm"
-if [ -d "$FNM_PATH" ]; then
-  export PATH="/home/nazuko/.local/share/fnm:$PATH"
-  eval "`fnm env`"
-fi
+export PATH=$PATH:/snap/bin:/usr/local/go/bin
