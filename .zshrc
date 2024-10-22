@@ -121,4 +121,5 @@ alias gcq="git commit -m"
 alias g++="g++-12"
 bindkey -s ^f "tmux-sessionizer\n"
 
-export PATH=$PATH:/snap/bin:/usr/local/go/bin
+export PATH=$PATH:/snap/bin:/usr/local/go/bin:/home/choudhry/.local/bin
+source ~/.env
