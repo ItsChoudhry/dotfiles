@@ -122,3 +122,8 @@ alias g++="g++-12"
 bindkey -s ^f "tmux-sessionizer\n"
 
 export PATH=$PATH:/snap/bin:/usr/local/go/bin:/home/itschoudhry/.local/bin
+
+#  sudo ln -s /usr/lib/wsl/lib/libcuda.so.1 /usr/local/cuda/lib64/libcuda.so for wsl if gpu not found
+export CUDA_HOME=/usr/local/cuda
+export PATH=${CUDA_HOME}/bin:${PATH}
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
