@@ -22,7 +22,7 @@
 "margin-right": 8,
 
 "modules-left": [
-	"group/notify",	
+	"group/status",
 	"custom/separator#dot-line",
 	"hyprland/workspaces#rw",
 	"custom/separator#blank_2",
@@ -39,11 +39,9 @@
 	"custom/separator#line",  
 	"group/audio",
 	"custom/separator#dot-line",
-	"tray",
-	"custom/separator#blank", 
-	// "custom/separator#dot-line",
-	"clock",
 	"group/app_drawer",
-	"group/status",
+	"custom/separator#blank", 
+	"tray",
+	"clock",
 	],
 }
