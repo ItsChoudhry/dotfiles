@@ -47,3 +47,4 @@ background-opacity = 0.6
 background-blur =  1
 font-size = 13
 confirm-close-surface = false
+gtk-single-instance = true
