@@ -22,8 +22,6 @@
 "margin-right": 8,
 
 "modules-left": [
-	"group/status",
-	"custom/separator#dot-line",
 	"hyprland/workspaces#rw",
 	"custom/separator#blank_2",
 	"hyprland/window",
@@ -34,14 +32,16 @@
 
 "modules-right": [
 	"group/laptop",
-	"custom/separator#blank",
-	"group/mobo_drawer",
-	"custom/separator#line",  
+	// "custom/separator#line",  
+	"custom/separator#dot-line",
 	"group/audio",
 	"custom/separator#dot-line",
-	"group/app_drawer",
-	"custom/separator#blank", 
 	"tray",
+	"custom/separator#dot-line",
+	"custom/weather", 
+	"custom/separator#dot-line",
 	"clock",
+	"custom/separator#dot-line",
+	"group/status",
 	],
 }
