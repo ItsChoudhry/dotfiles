@@ -48,3 +48,5 @@ background-blur =  1
 font-size = 13
 confirm-close-surface = false
 gtk-single-instance = true
+font-family = Monaspace Neon
+# font-feature = +calt, +liga, +ss01, +ss02, +ss03, +ss04, +ss05, +ss06, +ss07, +ss08, +ss09
