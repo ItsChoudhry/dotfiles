@@ -1,0 +1,14 @@
+theme = "kanabox_default"
+
+[editor]
+shell = ["zsh", "-c"]
+
+[editor.file-picker]
+hidden = false
+
+[editor.cursor-shape]
+insert = "bar"
+
+
+[keys.normal]
+C-f = ":sh tmux-sessionizer"
