@@ -43,3 +43,6 @@ export PATH=$PATH:~/.local/bin
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export HELIX_RUNTIME=~/helix/runtime
+
+# for keys
+[[ ! -f ~/.profile ]] || source ~/.profile
