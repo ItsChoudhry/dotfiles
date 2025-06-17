@@ -33,7 +33,7 @@ alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree'
 alias gcq="git commit -m"
-alias g++="g++-12"
+# alias g++="g++-12"
 bindkey -s ^f "tmux-sessionizer\n"
 
 export PATH=$PATH:~/.local/bin
