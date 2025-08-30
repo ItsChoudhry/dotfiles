@@ -46,3 +46,6 @@ export HELIX_RUNTIME=~/helix/runtime
 
 # for keys
 [[ ! -f ~/.profile ]] || source ~/.profile
+
+# opencode
+export PATH=/home/nazuko/.opencode/bin:$PATH
