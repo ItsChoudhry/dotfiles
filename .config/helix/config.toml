@@ -1,4 +1,4 @@
-theme = "kanabox_default"
+theme = "kanagawa-dragon"
 
 [editor]
 shell = ["zsh", "-c"]
@@ -10,5 +10,5 @@ hidden = false
 insert = "bar"
 
 
-[keys.normal]
-C-f = ":sh tmux-sessionizer"
+# [keys.normal]
+# C-f = ":sh tmux-sessionizer"
