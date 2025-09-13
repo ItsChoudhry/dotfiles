@@ -1,12 +1,73 @@
-[[language]]
-name = "python"
-language-servers = [ "ruff", "basedpyright", "pylyzer" ]
-auto-format = true
-[language-server.pyright.config.python.analysis]
-typeCheckingMode = "basic"
+# ~/.config/helix/languages.toml
+# ------------------------------
+# Language server definitions
+# ------------------------------
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+  [language-server.pyright.config]
+  typeCheckingMode = "basic"
+  # reportMissingImports = true
+  # reportUnusedImport = true
+  # reportGeneralTypeIssues =true
+
+  [language-server.pyright.config.python.analysis]
+  autoImportCompletions = true
+  useLibraryCodeForTypes = true
+
 [language-server.ruff]
 command = "ruff"
 args = ["server"]
-[language-server.pylyzer]
-command = "pylyzer"
-args = ["--server"]
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config.cargo]
+allFeatures = true
+
+[language-server.rust-analyzer.config.checkOnSave]
+command = "clippy"
+
+[language-server.clangd]
+command = "clangd"
+
+# -----------------
+# Python
+# -----------------
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff"]
+auto-format = true
+roots = ["pyproject.toml", "setup.cfg", "setup.py", "requirements.txt", ".git"]
+
+# -----------------
+# Rust
+# -----------------
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+formatter = { command = "rustfmt" }
+auto-format = true
+roots = ["Cargo.toml", ".git"]
+
+# -----------------
+# C
+# -----------------
+[[language]]
+name = "c"
+language-servers = ["clangd"]
+formatter = { command = "clang-format" }
+auto-format = true
+roots = [".git", "compile_commands.json", "CMakeLists.txt"]
+
+# -----------------
+# C++
+# -----------------
+[[language]]
+name = "cpp"
+language-servers = ["clangd"]
+formatter = { command = "clang-format" }
+auto-format = true
+roots = [".git", "compile_commands.json", "CMakeLists.txt"]
