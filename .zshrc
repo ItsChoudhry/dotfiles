@@ -39,6 +39,8 @@ bindkey -s ^f "tmux-sessionizer\n"
 export PATH=$PATH:~/.local/bin
 # export XDG_DATA_DIRS=$XDG_DATA_DIRS:/var/lib/snapd/desktop/applications
 
+export TERM=xterm-256color
+export COLORTERM=truecolor
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
