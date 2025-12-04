@@ -53,5 +53,3 @@ export HELIX_RUNTIME=~/helix/runtime
 export PATH=/home/nazuko/.opencode/bin:$PATH
 
 source  ~/venv/bin/activate
-
-. "$HOME/.local/share/../bin/env"
