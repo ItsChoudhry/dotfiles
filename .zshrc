@@ -21,11 +21,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 
-# Display Pokemon-colorscripts
-# Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
-#pokemon-colorscripts --no-title -s -r #without fastfetch
-#pokemon-colorscripts --no-title -s -r | fastfetch -c $HOME/.config/fastfetch/config-pokemon.jsonc --logo-type file-raw --logo-height 10 --logo-width 5 --logo -
-
 # Set-up icons for files/folders in terminal using lsd
 alias ls='lsd'
 alias l='ls -l'
@@ -50,6 +45,11 @@ export HELIX_RUNTIME=~/helix/runtime
 [[ ! -f ~/.profile ]] || source ~/.profile
 
 # opencode
+#
 export PATH=/home/nazuko/.opencode/bin:$PATH
 
-source  ~/venv/bin/activate
+export PATH=/home/nazuko/bin:$PATH
+
+if [[ -d ~/venv ]]; then
+  source ~/venv/bin/activate 2>/dev/null || true
+fi
