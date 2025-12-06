@@ -53,3 +53,5 @@ export PATH=/home/nazuko/bin:$PATH
 if [[ -d ~/venv ]]; then
   source ~/venv/bin/activate 2>/dev/null || true
 fi
+
+. "$HOME/.local/share/../bin/env"
