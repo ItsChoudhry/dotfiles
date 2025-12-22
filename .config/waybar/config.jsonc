@@ -5,7 +5,7 @@
   "spacing": 0,
   "height": 26,
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
-  "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["clock", "custom/update", "idle_inhibitor",  "custom/screenrecording-indicator"],
   "modules-right": [
     "group/tray-expander",
     "bluetooth",
@@ -137,5 +137,14 @@
   "tray": {
     "icon-size": 12,
     "spacing": 17
-  }
+  },
+  "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+          "activated": "",   // Icon when active (e.g., eye closed or locked – prevents idling)
+          "deactivated": ""  // Icon when inactive (e.g., eye open)
+      },
+      "tooltip-format-activated": "Idle inhibitor: ON (screen won't dim/lock/sleep)",
+      "tooltip-format-deactivated": "Idle inhibitor: OFF"
+  },
 }
