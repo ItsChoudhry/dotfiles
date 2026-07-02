@@ -50,6 +50,8 @@ export PATH=/home/nazuko/.opencode/bin:$PATH
 
 export PATH=/home/nazuko/bin:$PATH
 
+export PATH=/home/nazuko/.cargo/bin/:$PATH
+
 if [[ -d ~/venv ]]; then
   source ~/venv/bin/activate 2>/dev/null || true
 fi
